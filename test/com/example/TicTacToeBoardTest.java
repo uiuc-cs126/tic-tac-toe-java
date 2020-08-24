@@ -10,6 +10,7 @@ public class TicTacToeTest {
 
   @Test
   public void testValidBoardNoWinner() {
-    assertEquals(Evaluation.NoWinner, TicTacToe.evaluateBoard("O...X.X.."));
+    TicTacToeBoard board = new TicTacToeBoard("O...X.X..");
+    assertEquals(Evaluation.NoWinner, board.evaluateBoard());
   }
 }
