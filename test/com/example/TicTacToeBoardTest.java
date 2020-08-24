@@ -3,14 +3,10 @@ package com.example;
 import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by ________
- */
-public class TicTacToeTest {
-
+public class TicTacToeBoardTest {
   @Test
   public void testValidBoardNoWinner() {
     TicTacToeBoard board = new TicTacToeBoard("O...X.X..");
-    assertEquals(Evaluation.NoWinner, board.evaluateBoard());
+    assertEquals(Evaluation.NoWinner, board.evaluate());
   }
 }

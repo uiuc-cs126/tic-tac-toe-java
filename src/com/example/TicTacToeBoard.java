@@ -17,7 +17,7 @@ public class TicTacToeBoard {
    * Checks the state of the board (unreachable, no winner, X wins, or O wins)
    * @return an enum value corresponding to the board evaluation
    */
-  public Evaluation evaluateBoard() {
+  public Evaluation evaluate() {
     return Evaluation.UnreachableState;
   }
 }
